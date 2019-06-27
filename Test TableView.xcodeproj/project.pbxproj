@@ -12,8 +12,6 @@
 		D12B4AAE227BC18100A45236 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D12B4AAC227BC18100A45236 /* Main.storyboard */; };
 		D12B4AB0227BC18300A45236 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D12B4AAF227BC18300A45236 /* Assets.xcassets */; };
 		D12B4AB3227BC18300A45236 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D12B4AB1227BC18300A45236 /* LaunchScreen.storyboard */; };
-		D12B4ABE227BC18300A45236 /* Test_TableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12B4ABD227BC18300A45236 /* Test_TableViewTests.swift */; };
-		D12B4AC9227BC18300A45236 /* Test_TableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12B4AC8227BC18300A45236 /* Test_TableViewUITests.swift */; };
 		D12B4AD7227C1DAA00A45236 /* CityDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12B4AD6227C1DAA00A45236 /* CityDataSource.swift */; };
 		D12B4AD9227C24D800A45236 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12B4AD8227C24D800A45236 /* MyTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -44,11 +42,7 @@
 		D12B4AB2227BC18300A45236 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D12B4AB4227BC18300A45236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D12B4AB9227BC18300A45236 /* Test TableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Test TableViewTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D12B4ABD227BC18300A45236 /* Test_TableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_TableViewTests.swift; sourceTree = "<group>"; };
-		D12B4ABF227BC18300A45236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D12B4AC4227BC18300A45236 /* Test TableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Test TableViewUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D12B4AC8227BC18300A45236 /* Test_TableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_TableViewUITests.swift; sourceTree = "<group>"; };
-		D12B4ACA227BC18300A45236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D12B4AD6227C1DAA00A45236 /* CityDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDataSource.swift; sourceTree = "<group>"; };
 		D12B4AD8227C24D800A45236 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,8 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				D12B4AA7227BC18100A45236 /* Test TableView */,
-				D12B4ABC227BC18300A45236 /* Test TableViewTests */,
-				D12B4AC7227BC18300A45236 /* Test TableViewUITests */,
 				D12B4AA6227BC18100A45236 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -111,24 +103,6 @@
 				D12B4AD8227C24D800A45236 /* MyTableViewCell.swift */,
 			);
 			path = "Test TableView";
-			sourceTree = "<group>";
-		};
-		D12B4ABC227BC18300A45236 /* Test TableViewTests */ = {
-			isa = PBXGroup;
-			children = (
-				D12B4ABD227BC18300A45236 /* Test_TableViewTests.swift */,
-				D12B4ABF227BC18300A45236 /* Info.plist */,
-			);
-			path = "Test TableViewTests";
-			sourceTree = "<group>";
-		};
-		D12B4AC7227BC18300A45236 /* Test TableViewUITests */ = {
-			isa = PBXGroup;
-			children = (
-				D12B4AC8227BC18300A45236 /* Test_TableViewUITests.swift */,
-				D12B4ACA227BC18300A45236 /* Info.plist */,
-			);
-			path = "Test TableViewUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,7 +247,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D12B4ABE227BC18300A45236 /* Test_TableViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +254,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D12B4AC9227BC18300A45236 /* Test_TableViewUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,13 +415,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 38V8Y67B3N;
 				INFOPLIST_FILE = "Test TableView/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.cascadia.Test-TableView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -461,13 +434,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 38V8Y67B3N;
 				INFOPLIST_FILE = "Test TableView/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.cascadia.Test-TableView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -480,6 +454,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 38V8Y67B3N;
 				INFOPLIST_FILE = "Test TableViewTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -501,6 +476,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 38V8Y67B3N;
 				INFOPLIST_FILE = "Test TableViewTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -521,6 +497,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 38V8Y67B3N;
 				INFOPLIST_FILE = "Test TableViewUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -541,6 +518,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 38V8Y67B3N;
 				INFOPLIST_FILE = "Test TableViewUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
